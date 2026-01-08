@@ -1,46 +1,189 @@
-# Getting Started with Create React App
+# 🎵 Harmony Hub Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> A modern React-based audio collaboration platform built with TypeScript and Redux Toolkit
 
-## Available Scripts
+[![React](https://img.shields.io/badge/React-18.3.1-61dafb?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-3178c6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-2.2.7-764abc?style=flat&logo=redux&logoColor=white)](https://redux-toolkit.js.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+## ✨ Features
+
+- 🎛️ **Audio Studio Interface** - Intuitive audio workspace for music creation and editing
+- 🔊 **Volume Control** - Real-time audio volume management
+- 🏗️ **Redux-Powered State** - Predictable state management with Redux Toolkit
+- 🎨 **Modern React 18** - Built with latest React features and hooks
+- 📱 **Responsive Design** - Works seamlessly across devices
+- ⚡ **Fast Development** - Hot reload and instant feedback during development
+- 🧪 **Well Tested** - Comprehensive test coverage with Jest and React Testing Library
+- 🎯 **Type Safe** - Full TypeScript support with strict mode enabled
+
+## 🛠️ Tech Stack
+
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| [React](https://reactjs.org/) | 18.3.1 | UI Framework |
+| [TypeScript](https://www.typescriptlang.org/) | 4.9.5 | Type Safety |
+| [Redux Toolkit](https://redux-toolkit.js.org/) | 2.2.7 | State Management |
+| [React Router](https://reactrouter.com/) | 6.26.0 | Client-side Routing |
+| [ESLint](https://eslint.org/) | 8.57.0 | Code Linting |
+| [Prettier](https://prettier.io/) | 2.8.8 | Code Formatting |
+| [Jest](https://jestjs.io/) | Latest | Testing Framework |
+| [React Testing Library](https://testing-library.com/react) | 13.4.0 | Component Testing |
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- **Node.js** >= 16.x ([Download](https://nodejs.org/))
+- **npm** >= 7.x or **yarn** >= 1.22.x
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/blairmichaelg/harmony-hub-frontend.git
+   cd harmony-hub-frontend
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm start
+   # or
+   yarn start
+   ```
+
+4. **Open your browser**
+
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the app running.
+
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+#### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Runs the app in development mode at [http://localhost:3000](http://localhost:3000).  
+The page will reload when you make changes, and lint errors will appear in the console.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### `npm test`
 
-### `npm test`
+Launches the test runner in interactive watch mode.  
+See [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### `npm run build`
 
-### `npm run build`
+Builds the app for production to the `build` folder.  
+It optimizes the build for best performance - the build is minified and filenames include hashes.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### `npm run lint`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Runs ESLint to check for code quality issues.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### `npm run lint:fix`
 
-### `npm run eject`
+Automatically fixes linting issues where possible.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### `npm run format`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Formats code using Prettier according to the project's style guide.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 📁 Project Structure
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+harmony-hub-frontend/
+├── public/                 # Static files
+│   ├── index.html         # HTML template
+│   ├── manifest.json      # PWA manifest
+│   └── ...
+├── src/
+│   ├── pages/             # Page components
+│   │   └── Studio.tsx     # Audio studio page
+│   ├── store/             # Redux store configuration
+│   │   ├── slices/        # Redux slices
+│   │   │   └── audioSlice.ts
+│   │   └── store.ts       # Store setup
+│   ├── App.tsx            # Main App component
+│   ├── index.tsx          # Application entry point
+│   ├── App.css            # App styles
+│   └── index.css          # Global styles
+├── .eslintrc.json         # ESLint configuration
+├── .prettierrc            # Prettier configuration
+├── tsconfig.json          # TypeScript configuration
+├── package.json           # Dependencies and scripts
+└── README.md              # This file
+```
 
-## Learn More
+## 🧪 Testing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run the test suite:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm test
+```
+
+Run tests with coverage:
+
+```bash
+npm test -- --coverage
+```
+
+## 🏗️ Building for Production
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+The build artifacts will be stored in the `build/` directory.
+
+## 🤝 Contributing
+
+We welcome contributions from the community! Please read our [Contributing Guidelines](CONTRIBUTING.md) before submitting pull requests.
+
+### Quick Start for Contributors
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+Please ensure your code:
+- Follows the existing code style (enforced by ESLint and Prettier)
+- Includes appropriate tests
+- Has clear commit messages
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with [Create React App](https://github.com/facebook/create-react-app)
+- State management powered by [Redux Toolkit](https://redux-toolkit.js.org/)
+- UI built with [React](https://reactjs.org/)
+
+## 📮 Contact
+
+For questions or feedback, please [open an issue](https://github.com/blairmichaelg/harmony-hub-frontend/issues).
+
+---
+
+<div align="center">
+Made with ❤️ by the Harmony Hub team
+</div>
